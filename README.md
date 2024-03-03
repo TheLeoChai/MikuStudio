@@ -1,2 +1,2 @@
-# OakvillePhotos
-Repository for Web Development of Oakville Photos
+# Miku Studio
+Repository for Web Development of Miku Studio
