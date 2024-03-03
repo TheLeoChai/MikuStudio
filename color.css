@@ -1,11 +1,11 @@
 :root {
     --red: #DA8881;
-    --red-accent: #FFC7C2;
+    --light-red: #FFC7C2;
     --blue: #61D1CA;
-    --blue-accent: #BAF3E6;
+    --light-blue: #BAF3E6;
 
-    --shade-light: #F8F7F3;
-    --shade-dark: #5E6472;
+    --white: #F8F7F3;
+    --black: #5E6472;
 }
 
 .emphasis1 {
