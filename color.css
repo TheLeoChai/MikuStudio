@@ -7,3 +7,27 @@
     --shade-light: #F8F7F3;
     --shade-dark: #5E6472;
 }
+
+.emphasis1 {
+    color: var(--red);
+}
+
+.emphasis2 {
+    color: var(--blue);
+}
+
+.white {
+    color: var(--shade-light);
+}
+
+.black {
+    color: var(--shade-dark);
+}
+
+.light1 {
+    background-color: var(--red-accent);
+}
+
+.light2 {
+    background-color: var(--blue-accent);
+}

@@ -1,0 +1,93 @@
+  jp-text-regular {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+  }
+
+  .title {
+
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+  }
+
+  .jp-text-regular {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+  }
+
+  .jp-text-bold {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: inline-block;
+  }
+
+  .jp-text-light {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 300;
+    font-style: normal;
+    display: inline-block;
+  }
+
+  .jp-text-italic {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: italic;
+    display: inline-block;
+  }
+
+  .jp-text-bold-italic {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 700;
+    font-style: italic;
+    display: inline-block;
+  }
+
+  .jp-text-light-italic {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 300;
+    font-style: italic;
+    display: inline-block;
+  }
+
+  .jp-text-regular {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+  }
+
+  .jp-text-bold {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: inline-block;
+  }
+
+  .jp-text-light {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 300;
+    font-style: normal
+}
