@@ -35,15 +35,15 @@
   }
 
   #frame {
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 75%;
     display: block;
     position: absolute;
-    margin: calc(10vh - 0.3rem) calc(15vw - 0.3rem);
+    margin: calc(10vh - 0.3rem) calc(10vw - 0.3rem);
   }
 
   .left {
-    width: 45%;
+    width: 58%;
     height: 100%;
     position: absolute !important;
     margin: 0 !important;
@@ -51,7 +51,7 @@
   }
 
   .right {
-    width: 45%;
+    width: 33%;
     height: 100%;
     position: absolute;
     right: 0;
@@ -69,7 +69,7 @@
     max-height: 95%;
     max-width: 95%;
     object-fit: contain;
-    border: var(--shade-dark) 0.3rem solid; 
+    /*border: var(--shade-dark) 0.3rem solid; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -89,14 +89,18 @@
     text-align: center;
   }
 
+  .title > .align-center > * {
+    font-size: 2.5rem;
+  }
+
   .center-text > .title {
     position: absolute;
     display: flex;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 6vh);
     height: calc(50% - 6.15rem);
-    padding: 3rem;
+    padding: 3vh;
     border-bottom: var(--shade-dark) 0.3rem solid;
     text-align: center;
   }
@@ -109,8 +113,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 6vh);
     height: calc(50% - 6.15rem);
-    padding: 3rem;
+    padding: 3vh;
     text-align: center;
   }

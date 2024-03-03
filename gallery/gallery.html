@@ -31,10 +31,26 @@
         <div class="swiper mySwiper left">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="../img/DSC_2618.jpg"></div>
-              <div class="swiper-slide"><img src="../img/DSC_3160.jpg"></div>
-              <div class="swiper-slide"><img src="../img/DSC_3359.jpg"></div>
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="../img/DSC_2618.jpg" loading="lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="../img/DSC_3160.jpg" loading="lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="../img/DSC_3359.jpg" loading="lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            
+                <div class="swiper-slide">
+                    <img src="../img/DSC_4486_square.JPG" loading="lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
             </div>
           
           </div>
@@ -51,13 +67,11 @@
                 </div>
 
                 <div class="description">
-                    
                     <div class="align-center">
                         <pjp-text-regular>
                             Picture Description
                         </jp-text-regular>
                     </div>
-
                 </div>
 
             </div>
@@ -65,12 +79,6 @@
     </div>
 
     
-    
-    <script src="swiper.js"></script>
-    <!--<script>
-        var swiper = new Swiper(".mySwiper", {
-          mousewheel: true,
-          keyboard: true,
-        });
-      </script>-->
+    <script src="swiper-plugin.js"></script>
+    <script src="swiper-init.js"></script>
 </html>
