@@ -3,12 +3,14 @@
 <head>
     <title>Miku Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <!--Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Spectral&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    
 
     <!--Styles-->
     <link rel="stylesheet" type="text/css" href="color.css">
@@ -20,29 +22,87 @@
         <p>© 2024 Miku Studio. All rights reserved.</p>
     </div>
     <div class="container">
-        <div class="text-container">
-            <h1>MIKU STUDIO</h1>
-            <h2>「ミク工房」</h2>
-            <h3 style="margin: 3rem 0 0 0;">photography and film studio based in oakville, ontario</h3>
-            <h3><a href="www.google.com">book us</a> for events, portfolio, weddings or take a look at <a href="gallery/gallery.html">our work</a></h3>
+        <div class="heading-container">
+            <div class="decorative-div">
+                <span class="light1"></span>
+                <span class="light2" style="width: 4rem;"></span>
+            </div>
+            <div class="text-container">
+                <h1>MIKU STUDIO</h1>
+                <h2>「ミク工房」</h2>
+                <h3 style="margin: 3rem 0 0 0;">photography and film studio based in oakville, ontario</h3>
+                <h3><a href="www.google.com">book us</a> for events, portfolio, weddings or take a look at <a href="gallery/gallery.html">our work</a></h3>
+            </div>
+            <div></div>
         </div>
         <div class="grid-container">
             <div id="img1">
-                <img src="img/DSC_3160.jpg" alt="electric pole in front of blue sky" loading="lazy">
+                <img src="img/DSC_3160.jpg" alt="electric pole in front of blue sky">
             </div>
             <div id="img2">
-                <img src="img/DSC_2618.jpg" loading="lazy">
+                <img src="img/DSC_2618.jpg">
             </div>
             <div id="img3">
-                <img src="img/tim1.jpg" alt="electric pole in front of blue sky"  loading="lazy">
+                <img src="img/tim1.jpg" alt="electric pole in front of blue sky">
             </div>
             <div id="img4">
-                <img src="img/DSC2058.jpg" loading="lazy">
+                <img src="img/DSC2058.jpg">
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="goal-container">
+        <h2>Immortalize and keep the finest moments of your life.</h2>
+    </div>
 
+    <div class="container offer-wrapper">
+        <img id="img-portrait" src="img/DSC_2618.jpg">
+        <img id="img-event" src="img/DSC_3160.jpg">
+        <img id="img-wedding" src="img/DSC_3359.jpg">
+        <img id="img-commercial" src="img/DSC2058.jpg">
+        <div class="offer-div">
+            <a id="offer-portrait" href="#">
+                <span class="left-decor">「</span>
+                <h1>PORTRAIT</h1>
+                <span class="right-decor">」</span>
+            </a>
+            <a id="offer-event" href="#">
+                <span class="left-decor">「</span>
+                <h1>EVENT</h1>
+                <span class="right-decor">」</span>
+            </a>
+            <a id="offer-wedding" href="#">
+                <span class="left-decor">「</span>
+                <h1>WEDDING</h1>
+                <span class="right-decor">」</span>
+            </a>
+            <a id="offer-commercial" href="#">
+                <span class="left-decor">「</span>
+                <h1>COMMERCIAL</h1>
+                <span class="right-decor">」</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container" id="review-wrapper">
+        <div class="review-container">
+            <h4>「 Very professional! 」</h4>
+            <div class="title-container">
+                <h2>Alex X.</h2>
+            </div>
+        </div>
+        <div class="review-container">
+            <h4>「 Easy to work with. 」</h4>
+            <div class="title-container">
+                <h2>Yang J.</h2>
+            </div>
+        </div>
+        <!--<div class="review-container">
+            <h4>Just to my liking.</h4>
+            <div class="title-container">
+                <h2>Kalia Y.</h2>
+            </div>
+        </div>-->
     </div>
 </body>
+<script src="index.js"></script>
 </html>

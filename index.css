@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 #rights-container {
     position: fixed; /* or 'sticky' if applicable */
     bottom: 0; /* Distance from the bottom of the viewport */
@@ -13,6 +17,7 @@ body {
     transform: translateX(-50%); /* Center the element horizontally */
     /* Add your preferred width, height, and styling below */
     text-align: center; /* Example text alignment */
+    width: 100vw;
 }
 
 #rights-container > p {
@@ -56,10 +61,18 @@ h2 {
 
 h3 {
     font-family: "Cutive Mono", monospace;
-    font-weight: 200;
-    font-size: 0.8rem;
+    font-weight: 400;
+    font-size: 1rem;
     color: var(--shade-dark);
-    padding-left: 5em;
+}
+
+h4 {
+    font-family: "Spectral", serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    margin: 1rem;
+    color: var(--shade-dark);
 }
 
 a {
@@ -76,6 +89,33 @@ a {
     height: fit-content;
     min-height: 100vh;
     flex-wrap: wrap;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: inherit;
+    min-height: 100vh;
+    height: fit-content;
+}
+
+.decorative-div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+.decorative-div > span {
+    height: .4rem;
+    width: 8rem;
+    border-radius: .25rem;
+    opacity: .75;
 }
 
 .text-container {
@@ -98,7 +138,7 @@ a {
 }
 
 #img1 > img {
-    width: 16rem;
+    width: 14rem;
 }
 
 #img2 {
@@ -110,7 +150,7 @@ a {
 }
 
 #img2 > img {
-    width: 18rem;
+    width: 16rem;
 }
 
 #img3 {
@@ -121,7 +161,7 @@ a {
 }
 
 #img3 > img {
-    width: 22rem;
+    width: 20rem;
 }
 
 #img4 {
@@ -133,11 +173,153 @@ a {
 }
 
 #img4 > img {
-    width: 24rem;
+    width: 22rem;
 }
 
+#review-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+    min-height: fit-content;
+    justify-content: space-evenly;
+}
 
+.review-container h2 {
+    font-size: 0.75rem;
+    color: var(--shade-dark);
+    opacity: 0.75;
+}
 
+.review-container h4 {
+    margin-right: 2rem;
+}
+
+.review-container > .title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    justify-content: end;
+}
+
+.review-container > .title-container > h2 {
+    justify-content: end;
+}
+
+.review-container > .title-container > img {
+    width: 4rem;
+    height: 4rem;
+}
+
+#about-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal-container {
+    width: 100%;
+    background-image: url("img/goal_banner.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    height: 4rem;
+}
+
+.goal-container > h1 {
+    color: var(--shade-light);
+}
+
+.goal-container > h2 {
+    color: var(--shade-light);
+    font-weight: 400;
+}
+
+.offer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    position: relative;
+}
+
+.offer-wrapper img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    object-fit: cover;
+
+    transition: opacity cubic-bezier(1, 0, 0, 1) 0.5s;
+    transition: background-image cubic-bezier(1, 0, 0, 1) 0.1s;
+}
+
+#img-portrait {
+    opacity: 0;
+}
+
+#img-event {
+    opacity: 0;
+}
+
+#img-wedding {
+    opacity: 0;
+}
+
+#img-commercial {
+    opacity: 0;
+}
+
+.offer-div {
+    display: inline;
+}
+
+.offer-div > a {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.offer-div a h1 {
+    font-size: 4rem;
+    letter-spacing: 2rem;
+    padding: 0;
+    margin: 0;
+    transition: opacity cubic-bezier(1, 0, 0, 1) 0.1s;
+    opacity: .5;
+    justify-content: center;
+}
+
+.offer-div a span {
+    font-size: 4rem;
+    letter-spacing: 2rem;
+    padding: 0;
+    margin: 0;
+    transition: opacity cubic-bezier(1, 0, 0, 1) 0.1s;
+    opacity: 0;
+    justify-content: center;
+}
+
+.offer-div > a:hover h1 {
+    opacity: .9;
+}
+
+.offer-div > a:hover span {
+    opacity: .9;
+}
+
+.left-decor {
+    opacity: 0;
+}
+
+.right-decor {
+    opacity: 0;
+}
 
 @media only screen and (max-width: 1600px) {
     html {
@@ -159,6 +341,12 @@ a {
     
     .container {
         justify-content: space-around;
+    }
+
+    .heading-container {
+        min-height: 80vh;
+        justify-content: space-between;
+
     }
     
     .grid-container {
@@ -202,5 +390,18 @@ a {
     .text-container {
         display: block;
         padding-bottom: 2rem;
+    }
+
+    .review-container h2 {
+        font-size: 0.75rem;
+    }
+    
+    .review-container h4 {
+        font-size: 1.25rem;
+        margin-right: .25rem;
+    }
+
+    .goal-container {
+        display: none;
     }
 }
