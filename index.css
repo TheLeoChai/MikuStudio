@@ -340,6 +340,7 @@ a {
 
     body {
         overflow-x: hidden;
+        padding-top: 5rem;
     }
     
     .container {
@@ -389,6 +390,10 @@ a {
 
     #img4 {
         margin-top: -2rem;
+    }
+
+    .landing-wrapper {
+        padding-bottom: 5rem;
     }
 
     .goal-container {
