@@ -91,9 +91,9 @@
 
                         <script>
                             names.forEach(function (item, index) {
-                                $.get("../description/" + item + ".txt", function(data) {
+                                $.get("https://www.miku-studio.com/description/" + item + ".txt", function(data) {
                                     var thisItem = `
-                                    <div class="swiper-slide jp-text-regular">` + data + `</div>`;
+                                    <div class="jp-text-regular">` + data + `</div>`;
                                     // console.log(thisItem);
                                     $("#gallery-description").append(thisItem);
                                 });
