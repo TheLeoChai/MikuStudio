@@ -38,7 +38,7 @@
                     names.forEach(function (item, index) {
                         var thisItem = `
                             <div class="swiper-slide">
-                                <img src="../img/` + item + `.jpg" loading="lazy">
+                                <img src="../img/` + item + `.jpg" data-name="` + item + `" loading="lazy">
                                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                             </div>`;
                         // console.log(thisItem);
@@ -65,45 +65,16 @@
                 </div>
 
                 <div class="description">
-                    <div class="swiper-wrapper" id="gallery-description">
-                        <!-- Slides -->
-                        <!--<script>
-                            names.forEach(function (item, index) {
+                    <script>
+                        names.forEach(function (item, index) {
+                            $.get("https://www.miku-studio.com/description/" + item + ".txt", function(data) {
                                 var thisItem = `
-                                    <div class="swiper-slide">
-                                        <jp-text-regular>
-                                            <embed id = "description-` + item + `" src="../description/` + item + `.txt">
-                                        </jp-text-regular>
-                                    </div>`;
+                                <div class="jp-text-regular gone" id="` + item + `-desc" >` + data + `</div>`;
                                 // console.log(thisItem);
-                                $("#gallery-description").append(thisItem);
+                                $(".description").append(thisItem);
                             });
-                            
-                            $(document).ready(function(){
-                                    /*names.forEach(function (item, index) {
-                                       console.log(document.getElementById("description-" + item).getSVGDocument());
-                                    });*/
-                                    $("#gallery-description").children().each(function(){
-                                        $(this).find("pre").unwrap().unwrap().unwrap().unwrap();
-                                    });
-                                });
-                        </script>-->
-
-                        <script>
-                            names.forEach(function (item, index) {
-                                $.get("https://www.miku-studio.com/description/" + item + ".txt", function(data) {
-                                    var thisItem = `
-                                    <div class="jp-text-regular">` + data + `</div>`;
-                                    // console.log(thisItem);
-                                    $("#gallery-description").append(thisItem);
-                                });
-                                /*var thisItem = `
-                                <div class="swiper-slide jp-text-regular">` + getDesc(item) + `</div>`;
-                                // console.log(thisItem);
-                                $("#gallery-description").append(thisItem);*/
-                            });
-                        </script>
-                    </div>
+                        });
+                    </script>
                 </div>
 
             </div>

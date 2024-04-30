@@ -32,6 +32,7 @@
           '->',
           swiper.activeIndex
         );
+        switchDesc(swiper.activeIndex);
       });
       on('slideChangeTransitionStart', () => {
         if (!swiper.params.debugger) return;

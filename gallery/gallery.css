@@ -12,6 +12,14 @@
     display: inline-block;
   }
 
+  .gone{
+    display: none;
+  }
+
+  .here{
+    display: auto !important;
+  }
+
 
   .title {
 
