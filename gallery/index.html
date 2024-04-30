@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="../color.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <!--Scripts-->
+    <script src="content-initiate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+</head>
+<body>
+    <div id="rights-container">
+        <p>© 2024 Miku Studio. All rights reserved.</p>
+    </div>
+
+    <div id="frame">
+        <div class="left">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="gallery-imgs">
+                <!-- Slides -->
+                <script>
+                    names.forEach(function (item, index) {
+                        var thisItem = `
+                            <div class="swiper-slide">
+                                <img src="../img/` + item + `.jpg" loading="lazy">
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>`;
+                        // console.log(thisItem);
+                        $("#gallery-imgs").append(thisItem);
+                    });
+                </script>
+            </div>
+          
+        </div>
+        
+        
+
+
+        <div class="right">
+            <div class="center-text">
+
+                <div class="title">
+                    <div class="align-center">
+                        <jp-text-regular>
+                            「MIKU STUDIO」
+                        </jp-text-regular>
+                    </div>
+                    
+                </div>
+
+                <div class="description">
+                    <div class="swiper-wrapper" id="gallery-description">
+                        <!-- Slides -->
+                        <!--<script>
+                            names.forEach(function (item, index) {
+                                var thisItem = `
+                                    <div class="swiper-slide">
+                                        <jp-text-regular>
+                                            <embed id = "description-` + item + `" src="../description/` + item + `.txt">
+                                        </jp-text-regular>
+                                    </div>`;
+                                // console.log(thisItem);
+                                $("#gallery-description").append(thisItem);
+                            });
+                            
+                            $(document).ready(function(){
+                                    /*names.forEach(function (item, index) {
+                                       console.log(document.getElementById("description-" + item).getSVGDocument());
+                                    });*/
+                                    $("#gallery-description").children().each(function(){
+                                        $(this).find("pre").unwrap().unwrap().unwrap().unwrap();
+                                    });
+                                });
+                        </script>-->
+
+                        <script>
+                            names.forEach(function (item, index) {
+                                $.get("../description/" + item + ".txt", function(data) {
+                                    var thisItem = `
+                                    <div class="swiper-slide jp-text-regular">` + data + `</div>`;
+                                    // console.log(thisItem);
+                                    $("#gallery-description").append(thisItem);
+                                });
+                                /*var thisItem = `
+                                <div class="swiper-slide jp-text-regular">` + getDesc(item) + `</div>`;
+                                // console.log(thisItem);
+                                $("#gallery-description").append(thisItem);*/
+                            });
+                        </script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="swiper-plugin.js"></script>
+    <script src="swiper-init.js"></script>
+</html>

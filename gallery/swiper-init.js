@@ -1,5 +1,5 @@
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".left", {
   modules: [myPlugin],
   mousewheel: true,
   keyboard: true,
@@ -20,6 +20,10 @@ var swiper = new Swiper(".mySwiper", {
   },
   preventClicks: true,
   simulateTouch: false,
+  autoplay: {
+    delay: 10000,
+    disableOnInteraction: true,
+  },
 
 
   debugger: true,
