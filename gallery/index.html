@@ -37,8 +37,8 @@
                 <script>
                     names.forEach(function (item, index) {
                         var thisItem = `
-                            <div class="swiper-slide">
-                                <img src="../img/` + item + `.jpg" data-name="` + item + `" loading="lazy">
+                            <div class="swiper-slide" data-name="` + item + `">
+                                <img src="../img/` + item + `.jpg" loading="lazy">
                                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                             </div>`;
                         // console.log(thisItem);
@@ -84,4 +84,5 @@
     
     <script src="swiper-plugin.js"></script>
     <script src="swiper-init.js"></script>
+    <script> switchDesc() </script>
 </html>

@@ -32,11 +32,11 @@
           '->',
           swiper.activeIndex
         );
-        switchDesc(swiper.activeIndex);
       });
       on('slideChangeTransitionStart', () => {
         if (!swiper.params.debugger) return;
         console.log('slideChangeTransitionStart');
+        switchDesc();
       });
       on('slideChangeTransitionEnd', () => {
         if (!swiper.params.debugger) return;
