@@ -14,10 +14,16 @@
 
   .gone{
     display: none;
+    opacity: 0;
+  }
+
+  .fading_out{
+    opacity: 0;
   }
 
   .here{
     display: auto !important;
+    opacity: 1;
   }
 
 
@@ -173,4 +179,39 @@
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.thumb {
+  width: 100%;
+  position: fixed;
+  bottom: 2rem;
+  left: 0;
+  height: 10vh;
+  display: flex;
+  transition: opacity 0.5s;
+}
+
+
+.thumb .swiper-wrapper {
+  flex-grow: 6;
+}
+
+#gallery-thumbs > .swiper-slide {
+  width: 10vh;
+height: 10vh;
+  padding: auto;
+}
+
+.header{
+  padding: 1rem 1.5rem;
+  position: fixed;
+  text-align: right;
+  width: calc(100% - 3rem);
+}
+
+.header jp-text-regular{
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 100;
+  user-select: none;
 }

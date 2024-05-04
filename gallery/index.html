@@ -28,6 +28,9 @@
     <div id="rights-container">
         <p>© 2024 Miku Studio. All rights reserved.</p>
     </div>
+    <div class="header">
+        <jp-text-regular id="preview-btn"> Thumb Preview </jp-text-regular>
+    </div>
 
     <div id="frame">
         <div class="left">
@@ -61,8 +64,8 @@
                             <a href="../index.html">「MIKU STUDIO」</a>
                         </jp-text-regular>
                     </div>
-                    
                 </div>
+
 
                 <div class="description">
                     <script>
@@ -81,8 +84,37 @@
         </div>
     </div>
 
-    
+    <div class="thumb gone">
+        <div class="swiper-wrapper" id="gallery-thumbs">
+            <script>
+                names.forEach(function (item, index) {
+                    var thisItem = `
+                        <div class="swiper-slide" data-name="` + item + `">
+                            <img src="../img/` + item + `.jpg" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>`;
+                    // console.log(thisItem);
+                    $("#gallery-thumbs").append(thisItem);
+                });
+            </script>
+        </div>
+    </div>
+
+
     <script src="swiper-plugin.js"></script>
     <script src="swiper-init.js"></script>
     <script> loadDesc() </script>
+    <script>
+        $("#preview-btn").click(function() {
+           if ($(".thumb").hasClass("gone")) {
+               $(".thumb").addClass("here").removeClass("gone");
+           } else {
+               $(".thumb").addClass("fading_out").removeClass("here");
+                setTimeout(function() {
+                     $(".thumb").addClass("gone").removeClass("fading_out");
+                }, 500);
+           }
+        });
+
+    </script>
 </html>

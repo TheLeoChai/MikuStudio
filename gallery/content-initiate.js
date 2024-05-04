@@ -1,5 +1,5 @@
 
-let names = ["DSC_2618", "DSC_3160", "DSC_3359", "DSC_4486_square"]
+let names = ["DSC_2618", "DSC_3160", "DSC_3359", "DSC_4486_square", "DSC_6731", "DSC_6748", "DSC_6763-Enhanced-NR-Edit", "DSC_6766-Edit", "DSC_6769", "DSC_6950-Edit", "DSC_7611", "DSC_7804", "DSC_7810", "DSC_7846", "DSC_7879", "DSC2058", "DSC_7924-Enhanced-NR"]
 
 function loadDesc() {
     var slideName = $(".swiper-slide-visible").data("name");

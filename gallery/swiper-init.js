@@ -1,6 +1,18 @@
+var thumbSwiper = new Swiper(".thumb", {
+  modules: [thumbPlugin],
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 30,
+  //loop: true,
+  preventClicks: true,
+  freeMode: true,
+  watchSlidesProgress: true,
+  //simulateTouch: false,
+
+});
 
 var swiper = new Swiper(".left", {
-  modules: [myPlugin],
+  modules: [galleryPlugin],
   mousewheel: true,
   keyboard: true,
   loop: true,
@@ -24,7 +36,9 @@ var swiper = new Swiper(".left", {
     delay: 10000,
     disableOnInteraction: true,
   },
-
+  thumbs: {
+    swiper: thumbSwiper
+  },
 
   debugger: true,
 });
