@@ -215,3 +215,7 @@ height: 10vh;
   font-weight: 100;
   user-select: none;
 }
+
+.header jp-text-regular:hover{
+  cursor: pointer;
+}
