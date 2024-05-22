@@ -468,4 +468,18 @@ a {
         margin: 0 0 2rem 0;
     }
     
+    #offer-spacing {
+        display: none;
+    }
+
+    .offer-div h3 {
+        display: none;
+        padding: 0;
+    }
+
+    .offer-wrapper {
+        min-height: 50vh;
+        overflow: hidden;
+    }
+
 }
