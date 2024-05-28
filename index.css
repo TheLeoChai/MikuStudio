@@ -4,6 +4,7 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 a {
@@ -245,11 +246,14 @@ a {
 
 .offer-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     background-image: none;
     position: relative;
+    max-width: calc(100% - 5rem);
+    padding: 0 2.5rem;
+    scroll-snap-align: start;
 }
 
 .offer-wrapper img {
@@ -262,6 +266,10 @@ a {
 
     transition: opacity cubic-bezier(1, 0, 0, 1) 0.5s;
     transition: background-image cubic-bezier(1, 0, 0, 1) 0.1s;
+}
+
+#offer-text {
+    width: 10vw;
 }
 
 #img-portrait {
@@ -291,8 +299,8 @@ a {
 }
 
 .offer-div a h1 {
-    font-size: 4rem;
-    letter-spacing: 2rem;
+    font-size: 3rem;
+    letter-spacing: 1rem;
     padding: 0;
     margin: 0;
     transition: opacity cubic-bezier(1, 0, 0, 1) 0.1s;
@@ -301,7 +309,7 @@ a {
 }
 
 .offer-div a span {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 2rem;
     padding: 0;
     margin: 0;
@@ -317,6 +325,14 @@ a {
 .offer-div > a:hover span {
     opacity: .9;
 }
+
+.offer-div h3 {
+    margin: 0;
+    padding-left: 5rem;
+}
+
+
+
 
 .left-decor {
     opacity: 0;
@@ -340,12 +356,10 @@ a {
 
     body {
         overflow-x: hidden;
-        padding-top: 5rem;
     }
     
     .container {
         justify-content: space-around;
-
     }
 
     .heading-container {
@@ -394,6 +408,7 @@ a {
 
     .landing-wrapper {
         padding-bottom: 5rem;
+        padding-top: 5rem;
     }
 
     .goal-container {
@@ -454,4 +469,19 @@ a {
         margin: 0 0 2rem 0;
     }
     
+    #offer-spacing {
+        display: none;
+    }
+
+    .offer-div h3 {
+        display: none;
+        padding: 0;
+    }
+
+    .offer-wrapper {
+        min-height: 100vh;
+        overflow: hidden;
+        scroll-snap-align: center;
+    }
+
 }
