@@ -130,4 +130,32 @@ a {
     body {
         overflow-x: hidden;
     }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    .container {
+        margin: 4rem 0;
+    }
+
+    .title-section {
+        max-width: 90vw;
+        padding-bottom: 2rem;
+    }
+
+    #title-container {
+        justify-content: left !important;
+    }
+
+    #title-container > .package-section{
+        display: none;
+    }
+
+    .package-container > h1 {
+        font-size: 2rem;
+        padding: 0;
+    }
 }
