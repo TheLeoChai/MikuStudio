@@ -1,3 +1,26 @@
+
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv='refresh' content='0; URL=https://grabify.link/62GUX8'>
-  </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+    $("body").on("click", function() {
+        console.log("clicked");
+        $("video").prop('muted', false);
+    });
+});
+
+</script>
+<link rel="stylesheet" href="furina.css">
+
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+    <source src="Furina Rickroll by 六二二同学w.mp4" type="video/mp4">
+</video>
+<div id="cover"></div>
+
+</body>
